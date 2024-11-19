@@ -30,11 +30,6 @@ FROM customers
 
 -- COMMAND ----------
 
-SELECT from_json(profile) AS profile_struct
-  FROM customers;
-
--- COMMAND ----------
-
 SELECT profile 
 FROM customers 
 LIMIT 1
