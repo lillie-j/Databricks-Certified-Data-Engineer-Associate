@@ -43,11 +43,6 @@ DESCRIBE HISTORY orders
 
 -- COMMAND ----------
 
-INSERT OVERWRITE orders
-SELECT *, current_timestamp() FROM parquet.`${dataset.bookstore}/orders`
-
--- COMMAND ----------
-
 -- MAGIC %md
 -- MAGIC ## Appending Data
 
